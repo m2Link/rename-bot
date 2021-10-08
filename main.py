@@ -44,7 +44,7 @@ async def start_handler(bot: Client, event: Message):
             [
                 [InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
                  InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                [InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")]
+                [InlineKeyboardButton("❎ Close ❎", url=callback_data="closeMeh")]]),
             ]
         )
     )
@@ -179,7 +179,7 @@ async def delete_thumb_handler(bot: Client, event: Message):
     await db.set_thumbnail(event.from_user.id, thumbnail=None)
     await event.reply_text(
         "Custom Thumbnail Deleted Successfully!",
-        reply_markup=InlineKeyboardMarkup([
+        reply_markup=InlineKey boardMarkup([
             [InlineKeyboardButton("Go To Settings", callback_data="openSettings")],
             [InlineKeyboardButton("Close", callback_data="closeMeh")]
         ])
