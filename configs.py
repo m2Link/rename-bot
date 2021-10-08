@@ -18,11 +18,9 @@ class Config(object):
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
     ONE_PROCESS_ONLY = bool(os.environ.get("ONE_PROCESS_ONLY", False))
     START_TEXT = """
-I am Telegram Files Rename Bot.
+I am a telegram renamer You can rename any type of file or media with permanent thumbnail support.
 
-Send me a File to Rename.
-
-Made by @AbirHasan2005
+Go to /settings and choose appropriate modes
     """
     PROGRESS = """
 Percentage : {0}%
